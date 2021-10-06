@@ -4,8 +4,8 @@ const Tasks = ({ tasks,onDelete }) => {
     
     return (
         <>
-            {tasks.map( (task)=>
-             (<Task key={task.id} task={task} onDelete={onDelete} />
+            {tasks.map( (task)=>  //looping through them here, output of the component passing task={task} as a props
+             (<Task key={task.id} task={task} onDelete={onDelete} /> //when save that output my task 3 bar
             ))}
         </>
     )
